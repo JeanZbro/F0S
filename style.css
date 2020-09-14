@@ -1,0 +1,167 @@
+/*6. Общие CSS-стили
+Общие стили, сброс стилей браузера по умолчанию:*/
+
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; 
+/* добавим плавность переходов для всех элементов страницы*/
+}
+
+a {
+text-decoration: none;
+outline: none;
+color: #969696;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Oswald';
+font-weight: normal;
+letter-spacing: 1px;
+margin-bottom: 16px;
+line-height: 1.1;
+padding: 12px 12px 0;
+    text-align: center;
+/*color: #646464;*/
+}
+body {
+width: 100%;
+max-width: 960px;
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 14px;
+line-height: 1;
+/*color: #242424;*/
+}
+
+/*7. Стили для шапки и её содержимого*/
+header {
+width: 100%;
+background: #161616;
+padding: 4px 0;
+margin-bottom: 8px;
+position: relative;
+max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+box-shadow: 0px 0px 2px #333;    
+}
+
+/* ————————————————————————————————————————— */
+
+/*Стилі для вікон з примірниками коліру на весь екран*/
+
+/* хедер з назвою коліру і матеріалу*/
+.labelid{
+position: absolute;
+display: inline-block;
+font-size: 24px;
+line-height: 48px;
+padding: 0 8px;
+letter-spacing: 0.05em;
+margin-bottom: 8px;
+width: 100%;
+box-shadow: 0px 0px 4px #333;
+text-align: center;
+}
+/* стрілочка повернення на головну*/
+.back-butt {
+float: left;
+font-size: 24;
+}
+/*стрілочка праворуч для центровки назви (прихована)*/
+.non-butt {  
+float: right;
+visibility: hidden;
+}
+
+
+/* властивості для артикула в центрі екрану*/
+.articul{
+position:absolute;
+font-size: 18px;
+width:100%; 
+top:50%; 
+text-align:center;
+}
+
+/*список хешів кольорів внизу екрану*/
+ul{
+   position: absolute;
+   bottom: 1em;
+   right: 1em;
+   left: 1em;
+   text-align: justify;
+}
+ul li{
+   width: 28%;
+   display: inline-block;
+   text-align: center;
+}
+ul li.leftside {
+   width: 20%;
+   display: inline-block;
+   text-align: left;
+   float: left;
+}
+
+ul li.rightside {
+   width: 20%;
+   display: inline-block;
+   float: right;
+   text-align: right;
+}
+
+/* ————————————————————————————————————————— */
+
+/* Стилі для головного вікна з примірниками*/
+
+.angl{
+float: right;
+text-transform: none;
+}
+
+.red-wool, .winered-wool, .yellow-wool, .green-wool, .darkgreen-wool, .royalblue-wool, .blue-wool, .beige-wool {
+position: relative;
+display: inline-block;
+font-size: 14px;
+font-weight: bold;
+text-transform: uppercase;
+color: #242424;
+line-height: 42px;
+padding: 0 12px;
+letter-spacing: 0.05em;
+white-space: nowrap;
+margin-bottom: 8px;
+margin-left: 8px;
+width: 96%;
+border-radius: 4px;
+box-shadow: 0px 2px 4px #333;
+}
+
+.red-wool {
+background: firebrick;
+}
+.winered-wool {
+background:crimson;
+    opacity: 0.7;
+}
+.yellow-wool {
+background:yellow;
+}
+.green-wool {
+background:green;
+}
+.darkgreen-wool {
+background:darkgreen;
+}
+.royalblue-wool {
+background:royalblue;
+}
+.blue-wool {
+background:blue;
+}
+.beige-wool{
+background: beige;
+}
+
