@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!-- 1. Метатеги и раздел <head>.
+Добавим в раздел <head> необходимые файлы — ссылку на используемые шрифты, библиотеку jQuery, а также плагин prefixfree (чтобы не писать для свойств браузерные префиксы):-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zbro</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+
+<!-- 2. Шапка страницы.-->
+
+<!--<header><h2>Примірник Кольорів</h2></header>-->
+
+<h2>Кольори тканини для бригантів</h2>
+
+<div id="0" class="label invert" onclick="expand(this.id);">ЧОРНА ШЕРСТЬ<span class="angl">Black wool</span>
+  <div class="hidden">
+   <span class="articul">Артикул: 151723
+Пальтовий кашемір Ассоль, чорний</span>
+   <ul>
+   <li class="leftside">Black</li>
+   <li>#000000</li>
+   <li>#1f1f1f</li>
+   <li class="rightside">Black wool</li>
+   </ul>
+  </div>
+</div>
+  
+<div id="1" class="label red-wool" onclick="expand(this.id);">ЧЕРВОНА ШЕРСТЬ<span class="angl">Red wool</span>
+      
+  <div class="hidden">
+   <span class="articul">----</span>
+   <ul>
+   <li class="leftside">FireBrick</li>
+   <li>#B22222</li>
+   <li>#b01f1f</li>
+   <li class="rightside">Red wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="2" class="label winered-wool" onclick="expand(this.id);">ВИШНЕВА ШЕРСТЬ<span class="angl">Winered wool</span>
+      
+  <div class="hidden">
+   <span class="articul">----</span>
+   <ul>
+   <li class="leftside">Crimson</li>
+   <li>#DC143C</li>
+   <li>#991f33</li>
+   <li class="rightside">WineRed wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="3" class="label green-wool" onclick="expand(this.id);">ЗЕЛЕНА ШЕРСТЬ<span class="angl">Green wool</span>
+      
+  <div class="hidden">
+   <span class="articul">----</span>
+   <ul>
+   <li class="leftside">Green</li>
+   <li>#008000</li>
+   <li>#1f5e1f</li>
+   <li class="rightside">Green wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="4" class="label seablue-wool" onclick="expand(this.id);">БЛАКИТНА ШЕРСТЬ<span class="angl">Seablue wool</span>
+      
+  <div class="hidden">
+   <span class="articul">Артикул: 156047
+Пальтова ассоль - Морська хвиля</span>
+   <ul>
+   <li class="leftside">SteelBlue</li>
+   <li>#4682B4</li>
+   <li>#1f7099</li>
+   <li class="rightside">SeaBlue wool</li>
+   </ul>
+  </div>  
+</div>
+ 
+<div id="5" class="label blue-wool" onclick="expand(this.id);">СИНЯ ШЕРСТЬ<span class="angl">Seablue wool</span>
+      
+  <div class="hidden">
+   <span class="articul">Артикул: </span>
+   <ul>
+   <li class="leftside">Blue</li>
+   <li>#0000FF</li>
+   <li>#1f1fc2</li>
+   <li class="rightside">Blue wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="6" class="label yellow-wool" onclick="expand(this.id);">ЖОВТА ШЕРСТЬ<span class="angl">Yellow wool</span>
+      
+  <div class="hidden">
+   <span class="articul">Артикул: </span>
+   <ul>
+   <li class="leftside">Gold</li>
+   <li>#FFD700</li>
+   <li>#ebc21f</li>
+   <li class="rightside">Yellow wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="7" class="label beige-wool" onclick="expand(this.id);">БЕЖЕВА ШЕРСТЬ<span class="angl">Beige wool</span>
+      
+  <div class="hidden">
+   <span class="articul">Артикул: </span>
+   <ul>
+   <li class="leftside">Tan</li>
+   <li>#D2B48C</li>
+   <li>#c29970</li>
+   <li class="rightside">Beige wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="8" class="label white-wool" onclick="expand(this.id);">БІЛА ШЕРСТЬ<span class="angl">White wool</span>
+      
+  <div class="hidden">
+   <span class="articul">Артикул: </span>
+   <ul>
+   <li class="leftside">White</li>
+   <li>#FFFFFF</li>
+   <li>#cccccc</li>
+   <li class="rightside">White wool</li>
+   </ul>
+  </div>  
+</div>
+    
+<div id="9" class="label green-leather" onclick="expand(this.id);">ЗЕЛЕНА ШКІРА<span class="angl">Green leather</span>
+      
+  <div class="hidden">
+   <span class="articul">----</span>
+   <ul>
+   <li class="leftside">DarkDarkGreen</li>
+   <li>#556B2F</li>
+   <li>#1f471f</li>
+   <li class="rightside">Green leather</li>
+   </ul>
+  </div>  
+</div>
+    
+    
+    
+    
+<script>
+    function expand(id) {
+      var tabs = document.querySelectorAll("div.label"),
+      texts = document.querySelectorAll("div.label>div");
+      console.log(id);
+
+      if (texts[id].className == "displayed") {
+        texts[id].className = "hidden";
+        tabs[id].classList.remove("expanded");
+      } else {
+        for (var i = 0; i < texts.length; i++) {
+          texts[i].className = "hidden";
+          tabs[i].classList.remove("expanded");
+          texts[id].className = "displayed";
+          tabs[id].classList.add("expanded");
+        }
+      }
+    };
+</script>
+  
+</body>
+</html>

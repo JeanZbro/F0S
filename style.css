@@ -1,0 +1,187 @@
+/*6. Общие CSS-стили
+Общие стили, сброс стилей браузера по умолчанию:*/
+
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; 
+/* добавим плавность переходов для всех элементов страницы*/
+}
+
+a {
+text-decoration: none;
+outline: none;
+color: #242424;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Oswald';
+font-weight: normal;
+letter-spacing: 1px;
+margin-bottom: 12px;
+line-height: 1.1;
+padding: 12px 12px 0;
+    text-align: center;
+color: #646464;
+}
+body {
+width: 100%;
+max-width: 960px;
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 14px;
+line-height: 1;
+color: #242424;
+background: #060606;
+}
+
+/*7. Стили для шапки и её содержимого*/
+header {
+width: 100%;
+background: black;
+padding: 4px 0;
+position: relative;
+max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+box-shadow: 0px 0px 4px #333;    
+}
+
+/* ————————————————————————————————————————— */
+
+/*Стилі для вікон з примірниками коліру на весь екран*/
+
+/* Контейнер label розширюється*/
+.expanded{
+width: 100%;
+height: 600px;
+
+}
+/* Контейнер hidden всередені конт label*/
+.displayed{
+    position: relative;
+ display: block;
+ height: 92%;
+  padding: 4px 4px;
+/*border: 1px solid #fff;*/
+}
+.hidden {
+  display: none;
+
+}
+
+/* властивості для артикула в центрі екрану*/
+.articul{
+display: inline-block;
+position:relative;
+white-space: pre-wrap;/*normal;*/
+font-size: 18px;
+width:100%; 
+top:40%; 
+text-align:center;
+letter-spacing: 0.05em;
+}
+
+/*список хешів кольорів внизу екрану*/
+ul{
+   position: absolute;
+   display: block;
+   bottom: 0px;
+   right: 0em;
+   left: 0em;
+   text-align: justify;
+}
+ul li{
+   width: 25%;
+   display: inline-block;
+   text-align: center;
+}
+ul li.leftside {
+   width: 23%;
+   display: inline-block;
+   text-align: left;
+   float: left;
+}
+
+ul li.rightside {
+   width: 25%;
+   display: inline-block;
+   float: right;
+   text-align: right;
+}
+
+.label {
+position: relative;
+display: inline-block;
+font-size: 14px;
+font-weight: bold;
+/*text-transform: uppercase;*/
+color: #242424;
+line-height: 42px;
+padding: 0 12px;
+letter-spacing: 0.05em;
+white-space: nowrap;
+margin-bottom: 1%;
+margin-left: 1%;
+width: 98%;
+border-radius: 4px 4px 4px 4px;
+box-shadow: 0px 1px 2px #222;
+border: 1px solid #242424;
+}
+
+.angl{
+float: right;
+text-transform: none;
+}
+
+
+/* ————————————————————————————————————————— */
+.invert{
+color: #464646;
+}
+
+.black-wool{
+background: black;
+}
+.red-wool {
+background: firebrick;
+}
+.winered-wool {
+background:crimson;
+    opacity: 0.9;
+}
+.green-wool {
+background:green;
+    opacity: 0.8;
+}
+.seablue-wool {
+background:steelblue;
+    opacity: 0.8;
+}
+.blue-wool {
+background:blue;
+    opacity: 0.8;
+}
+.yellow-wool {
+background:gold;
+    opacity: 0.8;
+}
+.beige-wool{
+background: tan;/*burlywood*/
+    opacity: 0.8;
+}
+.white-wool{
+background: white;/*burlywood*/
+    opacity: 0.8;
+}
+
+/*----Alternate----*/
+
+.green-leather {
+background:#1f471f;
+}
+    
+
+
+
+
