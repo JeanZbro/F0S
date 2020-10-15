@@ -151,7 +151,7 @@ background:crimson;
     opacity: 0.9;
 }
 .green-wool {
-background:green;
+background:darkgreen;
     opacity: 0.8;
 }
 .seablue-wool {
@@ -170,8 +170,12 @@ background:gold;
 background: tan;/*burlywood*/
     opacity: 0.8;
 }
+.terracotta-wool{
+background: #a53d20;
+    opacity: 0.8;
+}
 .white-wool{
-background: white;/*burlywood*/
+background: white;
     opacity: 0.8;
 }
 
@@ -180,8 +184,3 @@ background: white;/*burlywood*/
 .green-leather {
 background:#1f471f;
 }
-    
-
-
-
-
